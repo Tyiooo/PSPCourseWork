@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.CRUDEmployees.ReadEmployees">
+   <children>
+      <Button fx:id="buttonBack" layoutX="20.0" layoutY="346.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="40.0" prefWidth="58.0" text="Назад" />
+      <Label layoutX="168.0" layoutY="21.0" text="Сотрудники">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="20.0" layoutY="110.0" prefHeight="229.0" prefWidth="560.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="67.20001220703125" text="ID" />
+            <TableColumn fx:id="name" prefWidth="92.79998779296875" text="Имя" />
+            <TableColumn fx:id="surname" prefWidth="140.79998779296875" text="Фамилия" />
+            <TableColumn fx:id="salary" prefWidth="84.79998779296875" text="Зарплата" />
+            <TableColumn fx:id="phoneNumber" prefWidth="175.20001220703125" text="Номер телефона" />
+         </columns>
+      </TableView>
+      <Button fx:id="buttonCreate" layoutX="500.0" layoutY="346.0" mnemonicParsing="false" onAction="#Create_Pressed" prefHeight="40.0" prefWidth="76.0" text="Создать" />
+   </children>
+</AnchorPane>

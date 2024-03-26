@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.CRUDCompanies.CreateCompanies">
+   <children>
+      <Label layoutX="142.0" layoutY="40.0" text="Создать компанию">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="200.0" text="Адрес компании">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="127.0" text="Название компании">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldCompanyName" layoutX="142.0" layoutY="155.0" prefHeight="26.0" prefWidth="238.0" />
+      <TextField fx:id="textfieldCompanyAddress" layoutX="142.0" layoutY="226.0" prefHeight="26.0" prefWidth="238.0" />
+      <Button fx:id="buttonCreate" layoutX="466.0" layoutY="298.0" mnemonicParsing="false" onAction="#Create_Pressed" prefHeight="54.0" prefWidth="103.0" text="Создать">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonBack" layoutX="49.0" layoutY="298.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="54.0" prefWidth="86.0" text="Назад">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label fx:id="labelNameError" layoutX="395.0" layoutY="154.0" prefHeight="27.0" prefWidth="174.0" text="Обязательное поле!" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAddressError" layoutX="395.0" layoutY="225.0" prefHeight="27.0" prefWidth="174.0" text="Обязательное поле!" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

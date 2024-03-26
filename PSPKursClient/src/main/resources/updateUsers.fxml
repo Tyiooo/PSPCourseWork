@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.CRUDUsers.UpdateUsers">
+   <children>
+      <Label layoutX="61.0" layoutY="46.0" text="Редактировать пользователя">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="178.0" text="Логин пользователя">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="115.0" text="Имя пользователя">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="242.0" text="Пароль пользователя">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldUserName" layoutX="118.0" layoutY="143.0" prefHeight="26.0" prefWidth="238.0" />
+      <TextField fx:id="textfieldUserLogin" layoutX="118.0" layoutY="204.0" prefHeight="26.0" prefWidth="238.0" />
+      <TextField fx:id="textfieldUserPassword" layoutX="118.0" layoutY="268.0" prefHeight="26.0" prefWidth="238.0" />
+      <Button fx:id="buttonSave" layoutX="448.0" layoutY="315.0" mnemonicParsing="false" onAction="#Save_Pressed" prefHeight="47.0" prefWidth="113.0" text="Сохранить">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonBack" layoutX="60.0" layoutY="315.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="47.0" prefWidth="114.0" text="Назад">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelNameError" layoutX="371.0" layoutY="142.0" prefHeight="27.0" prefWidth="174.0" text="Обязательное поле!" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelLoginError" layoutX="371.0" layoutY="203.0" prefHeight="27.0" prefWidth="174.0" text="Обязательное поле!" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPasswordError" layoutX="371.0" layoutY="267.0" prefHeight="27.0" prefWidth="174.0" text="Обязательное поле!" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
